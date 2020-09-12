@@ -1,0 +1,59 @@
+@import '../../sass/base.scss';
+
+.reaction-button{
+  position: relative;
+  &__trigger{
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    border-radius: 1rem;
+    transition: background 300ms ease;
+
+    &--active,&:hover{
+      background: #e8eaf6;
+    }
+
+    svg{
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__reactions{
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 15px rgba(#000000, 0.1);
+    animation: appear 300ms ease 0s 1 forwads fill;
+
+    &__reaction{
+      padding: 0.5rem 1rem;
+      background: none;
+      border: none;
+      border-radius: 1rem;
+      transition: background 300ms ease;
+      margin: 0.25rem;
+
+      &:hover{
+        background: #e8eaf6;
+      }
+
+      svg{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@keyframes appear{
+  from{
+    transform: scale(0);
+    transform-origin: top left;
+  }
+  to{
+    transform: scale(1);
+  }
+}

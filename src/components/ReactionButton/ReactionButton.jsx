@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import {ReactComponent as Crying} from '../../assets/crying.svg'
-import {ReactComponent as Sad} from '../../assets/sad.svg'
-import {ReactComponent as Happy} from '../../assets/happy.svg'
-import {ReactComponent as Happy2} from '../../assets/happy-2.svg'
-import {ReactComponent as Love} from '../../assets/in-love.svg'
-import {ReactComponent as NoReaction} from '../../assets/no-reaction.svg'
+import {ReactComponent as Crying} from './assets/crying.svg'
+import {ReactComponent as Sad} from './assets/sad.svg'
+import {ReactComponent as Happy} from './assets/happy.svg'
+import {ReactComponent as Happy2} from './assets/happy-2.svg'
+import {ReactComponent as Love} from './assets/in-love.svg'
+import {ReactComponent as NoReaction} from './assets/no-reaction.svg'
 
 import './reaction-button.scss';
 

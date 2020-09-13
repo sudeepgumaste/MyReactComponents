@@ -2,8 +2,14 @@
 
 .reaction-button{
   position: relative;
+  height: 2.5rem;
+  width: 3.5em;
+  display: flex;
   &__trigger{
-    padding: 0.5rem 1rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     background: none;
     border: none;
     border-radius: 1rem;
@@ -20,6 +26,7 @@
   }
 
   &__reactions{
+    display: flex;
     position: absolute;
     top: calc(100% + 0.5rem);
     left: 0;

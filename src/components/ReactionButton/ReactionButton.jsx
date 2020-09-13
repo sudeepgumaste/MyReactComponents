@@ -61,7 +61,12 @@ const ReactionButton = ({ state, setState }) => {
 };
 
 ReactionButton.propTypes = {
-  children: PropTypes.element.isRequired,
+  state: PropTypes.number,
+  setState: PropTypes.func.isRequired
+};
+
+ReactionButton.defaultProps = {
+  state: null
 };
 
 export default ReactionButton;

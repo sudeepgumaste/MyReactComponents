@@ -38,26 +38,24 @@ const ReactionButton = ({ state, setState }) => {
           state !== null ?reactions[state]:<NoReaction />
         }
       </button>
-      {isTriggered && 
-        <div className='reaction-button__reactions'>
-          {
-            reactions.map((reaction, index) => (
-              <button
-                key={index}
-                className="reaction-button__reactions__reaction"
-                onClick = {
-                  ()=>{
-                    setState(index);
-                    setIsTriggered(false)
-                  }
+      <div className={`reaction-button__reactions ${isTriggered? 'reaction-button__reactions--active': ''}`}>
+        {
+          reactions.map((reaction, index) => (
+            <button
+              key={index}
+              className="reaction-button__reactions__reaction"
+              onClick = {
+                ()=>{
+                  setState(index);
+                  setIsTriggered(false)
                 }
-              >
-                {reaction}
-              </button>
-            ))
-          }
-        </div>
-      }
+              }
+            >
+              {reaction}
+            </button>
+          ))
+        }
+      </div>
     </div>
   );
 };

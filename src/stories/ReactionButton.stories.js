@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import ReactionButton from '../components/ReactionButton/ReactionButton';
 
-export default { title: 'Button' };
+export default { title: 'ReactionButton' };
 
 export const Button = () => {
   const [emoji, setEmoji] = useState(null);

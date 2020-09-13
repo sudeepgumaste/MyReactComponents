@@ -26,7 +26,14 @@
     padding: 0.5rem;
     border-radius: 1rem;
     box-shadow: 4px 4px 15px rgba(#000000, 0.1);
-    animation: appear 300ms ease 0s 1 forwads fill;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 300ms ease;
+    background: #fff;
+
+    &--active{
+      transform: scale(1);
+    }
 
     &__reaction{
       padding: 0.5rem 1rem;
@@ -45,15 +52,5 @@
         height: 24px;
       }
     }
-  }
-}
-
-@keyframes appear{
-  from{
-    transform: scale(0);
-    transform-origin: top left;
-  }
-  to{
-    transform: scale(1);
   }
 }

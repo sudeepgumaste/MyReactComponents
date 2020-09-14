@@ -1,0 +1,40 @@
+@import '../../sass/base.scss';
+@import '../../sass/variables.scss';
+
+.toggle-button{
+  $root: &;
+  height: 1rem;
+  width: 3rem;
+  background: $indigo-50;
+  border: none;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: background ease 300ms;
+
+  &:hover{
+    background: $indigo-100;
+  }
+
+  &__switch{
+    position: absolute;
+    top: -0.25rem;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem 0.25rem rgba($indigo-dark, 0.1);
+    background: $white;
+    transition: transform ease 300ms, background ease 300ms;
+  }
+
+  &--active{
+    background: $indigo-200;
+    &:hover{
+      background: $indigo-300;
+    }
+    #{$root}__switch{
+      background: $indigo;
+      transform: translateX(100%);
+    }
+  }
+}

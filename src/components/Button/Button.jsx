@@ -9,8 +9,6 @@ const Button = ({ children, className, onClick, ...props }) => {
     <button
       className={`button ${click ? 'button--clicked' : ''} ${className || ''}`}
       onClick={(e) => {
-        e.persist();
-        console.log(e);
         setClicked(true);
         setTimeout(() => {
           setClicked(false);

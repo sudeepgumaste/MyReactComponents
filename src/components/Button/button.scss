@@ -16,7 +16,7 @@
   &::before{
     content: '';
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -36,5 +36,11 @@
       clip-path: circle(100%);
       opacity: 0;
     }
+  }
+
+  &:disabled{
+    box-shadow: none;
+    background: $indigo-50;
+    color: $indigo-200;
   }
 }

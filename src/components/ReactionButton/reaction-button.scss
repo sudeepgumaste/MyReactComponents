@@ -13,10 +13,10 @@
     background: none;
     border: none;
     border-radius: 1rem;
-    transition: background 100ms ease;
-
+    
     &--active,&:hover{
       background: #e8eaf6;
+      transition: background 300ms ease;
     }
 
     svg{
@@ -35,10 +35,10 @@
     box-shadow: 4px 4px 15px rgba(#000000, 0.1);
     transform: scale(0);
     transform-origin: top left;
-    transition: transform 100ms ease;
     background: #fff;
-
+    
     &--active{
+      transition: transform 300ms ease;
       transform: scale(1);
     }
 

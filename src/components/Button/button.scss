@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    background: $indigo-400;
+    background: rgba(#fff, 0.2);
     clip-path: circle(0%);
   }
   
@@ -47,5 +47,26 @@
     box-shadow: none;
     background: $indigo-50;
     color: $indigo-200;
+  }
+
+  &--text{
+    background: none;
+    box-shadow: none;
+    color: $indigo-900;
+    transition: background 300ms ease;
+
+    &:hover{
+      background: $indigo-50;
+    }
+
+    &::before{
+      background: $indigo-100;
+    }
+
+    &:disabled{
+      box-shadow: none;
+      background: none;
+      color: $indigo-200;
+    }
   }
 }

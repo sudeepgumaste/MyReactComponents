@@ -35,7 +35,6 @@
   }
   
   &--clicked{
-    // background: $indigo-dark;
     &::before{
       transition: clip-path 500ms ease, opacity 500ms ease 300ms;
       clip-path: circle(100%);
@@ -53,6 +52,7 @@
     background: none;
     box-shadow: none;
     color: $indigo-900;
+    font-weight: 500;
     transition: background 300ms ease;
 
     &:hover{

@@ -23,6 +23,10 @@ const Checkbox = ({ state, setState, children, ...props }) => {
     >
       <span
         className={`checkbox__icon ${state ? 'checkbox__icon--selected' : ''}`}
+        onClick={(e) =>{
+          e.stopPropagation();
+          setState((val) => !val);
+        }}
       >
         <CheckboxUnselected />
         <CheckboxSelected />

@@ -69,4 +69,29 @@
       color: $indigo-200;
     }
   }
+
+  &--outline{
+    background: none;
+    box-shadow: none;
+    color: $indigo-900;
+    font-weight: 500;
+    transition: background 300ms ease;
+    border: 1px solid $indigo-300;
+    box-sizing: border-box;
+
+    &:hover{
+      background: $indigo-50;
+    }
+
+    &::before{
+      background: $indigo-100;
+    }
+
+    &:disabled{
+      box-shadow: none;
+      background: none;
+      color: $indigo-200;
+      border: 1px solid $indigo-100;
+    }
+  }
 }

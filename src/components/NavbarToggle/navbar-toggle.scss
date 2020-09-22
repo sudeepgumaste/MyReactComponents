@@ -1,0 +1,50 @@
+@import '../../sass/base.scss';
+@import '../../sass/variables.scss';
+
+.navbar-toggle{
+  height: 3rem;
+  width: 3rem;
+  background: $indigo-50;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.75rem 0.6rem;
+  transition: background 300ms ease;
+  $root: &;
+
+  &:hover{
+    background: $indigo-100;
+  }
+
+  &__dash{
+    height: 0.25rem;
+    width: 55%;
+    background: $indigo-900;
+    border-radius: 0.125rem;
+    transition: transform 300ms ease;
+
+    &:nth-child(2){
+      width: 100%;
+    }
+
+    &:nth-child(3){
+      align-self: flex-end;
+    }
+  }
+
+  &--active{
+    #{$root}__dash{
+      &:nth-child(1){
+        transform: rotate(45deg) translate(4px, 1px)
+      }
+      &:nth-child(2){
+        transform: rotate(-45deg);
+      }
+      &:nth-child(3){
+        transform: rotate(45deg) translate(-4px, -1px)
+      }
+    }
+  }
+}

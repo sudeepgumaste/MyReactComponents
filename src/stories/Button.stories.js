@@ -29,10 +29,10 @@ export const textButton = () => (
         marginRight: '1rem'
       }}
     >
-      Primary Text Button
+      Text Button
     </TextButton>
     <TextButton onClick={()=>{console.log('Click')}} disabled>
-      Primary Button Disabled
+      Tect Button Disabled
     </TextButton>
   </>
 );
@@ -45,10 +45,10 @@ export const outlineButton = () => (
         marginRight: '1rem'
       }}
     >
-      Primary Text Button
+      Outline Button
     </OutlineButton>
     <OutlineButton onClick={()=>{console.log('Click')}} disabled>
-      Primary Button Disabled
+      Outline Button Disabled
     </OutlineButton>
   </>
 );

@@ -17,11 +17,13 @@ const Button = ({ children, className, onClick, ...props }) => {
       }}
       {...props}
     >
-      <span>
-        {children}
-      </span>
+      <span>{children}</span>
     </button>
   );
+};
+
+Button.defaultProps = {
+  onClick: () => {},
 };
 
 export default Button;

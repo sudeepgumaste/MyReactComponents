@@ -1,0 +1,34 @@
+@import '../../sass/base.scss';
+@import '../../sass/variables.scss';
+
+.tab-switcher{
+  font-family: $roboto;
+
+  &__tabs-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+
+    &__tabs{
+      border: none;
+      padding: 0.5rem 1.25rem;
+      font-family: $roboto;
+      background: none;
+      transition: background 300ms ease;
+      border-bottom: 2px solid $indigo-300;
+      font-weight: 500;
+      font-size: 1rem;
+
+      &:hover{
+        background: $indigo-50;
+      }
+
+      &--active{
+        background: $indigo-100;
+        border-bottom: 2px solid $indigo-500;
+        &:hover{
+          background: $indigo-100;
+        }
+      }
+    }
+  }
+}

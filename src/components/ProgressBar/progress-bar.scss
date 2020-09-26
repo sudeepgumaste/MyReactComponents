@@ -1,0 +1,15 @@
+@import '../../sass/base.scss';
+@import '../../sass/variables.scss';
+
+.progress-bar{
+  height: 0.5rem; 
+  background-color: $indigo-50;
+  border-radius: 0.25rem;
+  display: flex;
+
+  &__completion{
+    height: 100%;  
+    background-color: $indigo-700;
+    border-radius: 0.25rem;
+  }
+}
